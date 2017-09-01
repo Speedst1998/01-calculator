@@ -27,28 +27,39 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:onClick="addNums"
+        android:background= "@color/colorPrimaryDark"
         android:text="@string/add" />
     <Button
         android:id="@+id/subtract"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:onClick="subtractNums"
+        android:background= "@color/colorPrimary"
         android:text="@string/subtract" />
     <Button
         android:id="@+id/multiply"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:onClick="multiplyNums"
+        android:background= "@color/colorPrimaryDark"
         android:text="@string/multiply" />
     <Button
         android:id="@+id/divide"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:onClick="divideNums"
+        android:background= "@color/colorPrimary"
         android:text="@string/divide" />
+    <Button
+        android:id="@+id/clear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="clearNums"
+        android:background= "@color/colorPrimaryDark"
+        android:text="@string/clear" />
     <TextView
         android:id="@+id/result"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="The answer will be here" />
+        android:text="@string/answer" />
 </LinearLayout>

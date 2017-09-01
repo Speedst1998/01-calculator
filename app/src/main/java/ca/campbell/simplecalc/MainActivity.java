@@ -44,7 +44,7 @@ public class MainActivity extends AppCompatActivity {
         try {
             num1 = Double.parseDouble(etNum1.getText().toString());
             num2 = Double.parseDouble(etNum2.getText().toString());
-            result.setText(Double.toString(num1 + num2));
+            result.setText(Double.toString(num1 - num2));
         }
         catch(NumberFormatException e){
             result.setText(R.string.numerror);
@@ -55,18 +55,28 @@ public class MainActivity extends AppCompatActivity {
         try {
             num1 = Double.parseDouble(etNum1.getText().toString());
             num2 = Double.parseDouble(etNum2.getText().toString());
-            result.setText(Double.toString(num1 + num2));
+            result.setText(Double.toString(num1 * num2));
         }
         catch(NumberFormatException e){
             result.setText(R.string.numerror);
         }
 
     }  //addNums()
+    public void clearNums(View v){
+
+        etNum1.setText("");
+        etNum2.setText("");
+
+    }
     public void divideNums(View v) {
         try {
             num1 = Double.parseDouble(etNum1.getText().toString());
             num2 = Double.parseDouble(etNum2.getText().toString());
-            result.setText(Double.toString(num1 + num2));
+            if(num2 == 0){
+                result.setText("CANT DIVIDE BY 0");
+            }
+            else
+                result.setText(Double.toString(num1 / num2));
         }
         catch(NumberFormatException e){
             result.setText(R.string.numerror);
